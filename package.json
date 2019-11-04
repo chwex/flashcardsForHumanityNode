@@ -12,18 +12,16 @@
     "url": "https://github.com/chwex/flashcardsForHumanityApi/issues"
   },
   "scripts": {
-    "prestart": "npm run drop-sqlite-db || true",
+    "prestart": "npm run ",
     "start": "npm run nodemon",
-    "poststart": "npm run create-sqlite-db",
+    "poststart": "npm run ",
     "dev": "cross-env NODE_ENV=development node ./api/api.js",
     "nodemon": "nodemon --exec npm run dev",
-    "create-sqlite-db": "shx touch ./db/database.sqlite",
-    "drop-sqlite-db": "shx rm ./db/database.sqlite",
     "lint": "eslint ./api/. ./config/. ./test/.",
     "prepush": "npm test",
     "pretest": "npm run lint",
     "production": "cross-env NODE_ENV=production node ./api/api.js",
-    "test": "npm run create-sqlite-db; cross-env NODE_ENV=testing jest --coverage; npm run drop-sqlite-db",
+    "test": "npm run cross-env NODE_ENV=testing jest --coverage;",
     "test-ci": "jest --coverage --forceExit"
   },
   "jest": {
@@ -44,6 +42,7 @@
     "express-routes-mapper": "^1.0.2",
     "helmet": "^3.12.0",
     "jsonwebtoken": "^8.2.1",
+    "mysql2": "^2.0.0",
     "sequelize": "^6.0.0",
     "sqlite3": "^4.0.0"
   },
