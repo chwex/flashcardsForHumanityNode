@@ -1,15 +1,15 @@
 {
-  "name": "express-rest-api-boilerplate",
+  "name": "flashcardsForHumanityApi",
   "version": "0.0.0",
   "author": "Lukas Aichbauer <l.aichbauer@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aichbauer/express-rest-api-boilerplate.git"
+    "url": "git+https://github.com/chwex/flashcardsForHumanityApi.git"
   },
-  "homepage": "https://github.com/aichbauer/express-rest-api-boilerplate#readme",
+  "homepage": "https://github.com/chwex/flashcardsForHumanityApi#readme",
   "bugs": {
-    "url": "https://github.com/aichbauer/express-rest-api-boilerplate/issues"
+    "url": "https://github.com/chwex/flashcardsForHumanityApi/issues"
   },
   "scripts": {
     "prestart": "npm run drop-sqlite-db || true",
