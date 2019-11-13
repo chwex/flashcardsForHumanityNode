@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const privateRoutes = require('./routes/privateRoutes');
 const publicRoutes = require('./routes/publicRoutes');
 
