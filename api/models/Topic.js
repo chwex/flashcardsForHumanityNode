@@ -4,8 +4,8 @@ const sequelize = require('../../config/database');
 const Topic = sequelize.define('topics', {
   id: {
     type: Sequelize.INTEGER,
-    primaryKey: null,
-    allowNull: false,
+    primaryKey: true,
+    autoIncrement: true,
   },
   name: {
     type: Sequelize.STRING,

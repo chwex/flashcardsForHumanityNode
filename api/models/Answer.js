@@ -5,7 +5,7 @@ const Answer = sequelize.define('answers', {
   id: {
     type: Sequelize.INTEGER,
     primaryKey: true,
-    allowNull: false,
+    autoIncrement: true,
   },
   possibleAnswer: {
     type: Sequelize.STRING,
