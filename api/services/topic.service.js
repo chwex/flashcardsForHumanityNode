@@ -1,8 +1,8 @@
 const Topic = require('../models/Topic');
 const paginate = require('../services/pagination.service');
-const Sequelize = require('sequelize');
 
-const op = Sequelize.Op;
+// const Sequelize = require('sequelize');
+// const op = Sequelize.Op;
 
 class TopicService {
   constructor() {
@@ -27,7 +27,7 @@ class TopicService {
   }
 
   create(topicParams) {
-    const {  name } = topicParams;
+    const { name } = topicParams;
     this.topicService = Topic.create({
       name: name,
     });
