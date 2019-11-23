@@ -19,9 +19,9 @@ class QuestionService {
   }
 
   getById(questionParams) {
-    const { questionId } = questionParams;
+    const { questionID } = questionParams;
     this.questionService = Question.findAll({
-      where: { id: questionId },
+      where: { id: questionID },
     });
     return this.questionService;
   }
@@ -35,3 +35,5 @@ class QuestionService {
     return this.topicService;
   }
 }
+
+module.exports = QuestionService;
